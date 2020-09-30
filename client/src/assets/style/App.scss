@@ -1,0 +1,13 @@
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
