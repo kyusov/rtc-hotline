@@ -1,22 +1,23 @@
 import React from 'react'
-import logo from './logo.svg'
+import {Header, Main, Footer} from "./components"
+import "./assets/style/App.scss"
+
+let rooms = [
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Технологии разработки программного обеспечения",teacher:"Зинченко А. С."},
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Вычислительные системы и компьютерные сети",teacher:"Казимиров А. С."},
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Технологии разработки программного обеспечения",teacher:"Зинченко А. С."},
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Вычислительные системы и компьютерные сети",teacher:"Казимиров А. С."},
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Технологии разработки программного обеспечения",teacher:"Зинченко А. С."},
+            {photo:"https://icons.iconarchive.com/icons/icons-land/vista-people/256/Person-Male-Light-icon.png", title:"лек. Вычислительные системы и компьютерные сети",teacher:"Казимиров А. С."}
+          ]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Main rooms={rooms}/>
+      <Footer/>
+      
     </div>
   )
 }
